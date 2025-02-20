@@ -11,3 +11,4 @@
 | 09.02.2025 | 2          | Rest of the "mandatory" labs         | Did the PortSwigger labs             |
 | 17.02.2025 | 2          | Intro to penetration testing          | Watched the lecture                 |
 | 19.02.2025 | 3          | Installing                            | Installed all shown on lecture      |
+| 20.02.2025 | 4          | Phase 1                               | Did the first phase and the report for it      |
