@@ -39,11 +39,11 @@ The purpose of this report is to document the findings of penetration testing, u
 - ZAP report: App_first_test.md
 - ZAP report: App_second_test.md
 
-  # ZAP by Checkmarx
+  # Part 2
 
 ## Introduction
 
-The purpose of this report is to document the findings of penetration testing using ZAP. This test specifically focuses on vulnerabilities and their potential impact on system security. The test was conducted on February 20, 2025. The testing environment was a VirtualBox at [http://localhost:8000](http://localhost:8000). The tool used during the testing was ZAP by Checkmarx. The primary goal of the test was to identify different vulnerabilities that could affect the security of the application.
+This report documents the findings of penetration testing using ZAP. This test specifically focuses on vulnerabilities and their potential impact on system security. The test was conducted on March 5, 2025. The testing environment was a VirtualBox at http://0.0.0.0:8000/. The tool used during the testing was ZAP by Checkmarx. The primary goal of the test was to identify different vulnerabilities that could affect the application's security.
 
 ## Summary of Alerts
 
