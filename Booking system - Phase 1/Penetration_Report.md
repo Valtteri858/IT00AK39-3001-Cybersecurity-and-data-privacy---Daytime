@@ -37,4 +37,4 @@ The purpose of this report is to document the findings of penetration testing, u
 - **Solution**: Sanitize invalid strings in the code and ensure that only allowed inputs are accepted.
 ## Appendices
 - ZAP report: App_first_test.md
-- - ZAP report: App_second_test.md
+- ZAP report: App_second_test.md
