@@ -38,3 +38,50 @@ The purpose of this report is to document the findings of penetration testing, u
 ## Appendices
 - ZAP report: App_first_test.md
 - ZAP report: App_second_test.md
+
+  # ZAP by Checkmarx
+
+## Introduction
+
+The purpose of this report is to document the findings of penetration testing using ZAP. This test specifically focuses on vulnerabilities and their potential impact on system security. The test was conducted on February 20, 2025. The testing environment was a VirtualBox at [http://localhost:8000](http://localhost:8000). The tool used during the testing was ZAP by Checkmarx. The primary goal of the test was to identify different vulnerabilities that could affect the security of the application.
+
+## Summary of Alerts
+
+| Risk Level   | Number of Alerts |
+|--------------|------------------|
+| High         | 0                |
+| Medium       | 0                |
+| Low          | 0                |
+| Informational| 1                |
+
+### Alerts
+
+| Name              | Risk Level   | Number of Instances |
+|-------------------|--------------|---------------------|
+| User Agent Fuzzer | Informational| 12                  |
+
+### Alert Detail
+
+#### User Agent Fuzzer 
+**Risk Level**: Informational (Medium)
+
+**Description**:  
+Check for differences in response based on fuzzed User Agent (e.g., mobile sites, access as a Search Engine Crawler). Compares the response status code and the hash code of the response body with the original response.
+
+**URL**: [http://0.0.0.0:8000/register](http://0.0.0.0:8000/register)  
+**Method**: POST  
+**Parameter**: Header User-Agent  
+
+| Attack                                                                 | Evidence | Other Info |
+|------------------------------------------------------------------------|----------|------------|
+| Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)                     | ``       | ``         |
+| Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)                     | ``       | ``         |
+| Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)                     | ``       | ``         |
+| Mozilla/5.0 (Windows NT 10.0; Trident/7.0; rv:11.0) like Gecko          | ``       | ``         |
+
+**Instances**: 12
+
+## Appendices
+
+- ZAP report: [App_first_test.md](App_first_test.md)
+- ZAP report: [App_second_test.md](App_second_test.md)
