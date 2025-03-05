@@ -54,32 +54,27 @@ This report documents the findings of penetration testing using ZAP. This test s
 | Low          | 0                |
 | Informational| 1                |
 
-### Alerts
+# Findings and Categorization
 
-| Name              | Risk Level   | Number of Instances |
-|-------------------|--------------|---------------------|
-| User Agent Fuzzer | Informational| 12                  |
+## Informational (Low-Impact) Alert  
 
-### Alert Detail
+### User Agent Fuzzer  
+- **Risk Level:** Informational (Medium)  
+- **Impact:** The test identified variations in application responses based on different **User-Agent headers**.  
+  This could indicate inconsistencies in how the system processes requests from different sources (e.g., mobile devices, bots, or search engine crawlers).  
+- **Affected URL:** [http://0.0.0.0:8000/register](http://0.0.0.0:8000/register)  
+- **Attack Method:** `POST` request with different `User-Agent` headers.  
+- **Recommendation:** Review handling of **User-Agent inputs** to ensure **consistent responses** and prevent **unintended information leakage**.  
 
-#### User Agent Fuzzer 
-**Risk Level**: Informational (Medium)
+### Attack Instances:  
 
-**Description**:  
-Check for differences in response based on fuzzed User Agent (e.g., mobile sites, access as a Search Engine Crawler). Compares the response status code and the hash code of the response body with the original response.
+| **User-Agent String** | **Response Evidence** |
+|----------------------|----------------------|
+| Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) | - |
+| Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0) | - |
+| Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1) | - |
+| Mozilla/5.0 (Windows NT 10.0; Trident/7.0; rv:11.0) like Gecko | - |
 
-**URL**: [http://0.0.0.0:8000/register](http://0.0.0.0:8000/register)  
-**Method**: POST  
-**Parameter**: Header User-Agent  
-
-| Attack                                                                 | Evidence | Other Info |
-|------------------------------------------------------------------------|----------|------------|
-| Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)                     | ``       | ``         |
-| Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)                     | ``       | ``         |
-| Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)                     | ``       | ``         |
-| Mozilla/5.0 (Windows NT 10.0; Trident/7.0; rv:11.0) like Gecko          | ``       | ``         |
-
-**Instances**: 12
 
 ## Appendices
 
