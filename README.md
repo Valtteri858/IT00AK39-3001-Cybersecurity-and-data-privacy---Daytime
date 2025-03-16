@@ -12,4 +12,5 @@
 | 17.02.2025 | 2          | Intro to penetration testing          | Watched the lecture                 |
 | 19.02.2025 | 3          | Installing                            | Installed all shown on lecture      |
 | 20.02.2025 | 4          | Phase 1                               | Did the first phase and the report for it      |
-| 05.03.2025 | 3          | Phase 2                               | Did the second phase and the report for it      |
+| 05.03.2025 | 3          | Phase 1 part 2                               | Did the second phase and the report for it      |
+| 16.03.2025 | 5          | Phase 2 part 1                           | Did the phase two part one     |
