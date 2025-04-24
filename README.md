@@ -15,3 +15,4 @@
 | 05.03.2025 | 3          | Phase 1 part 2                               | Did the second phase and the report for it      |
 | 16.03.2025 | 5          | Phase 2 part 1                           | Did the phase two part one     |
 | 20.03.2025 | 4          | Phase 2 part 1                           | Did the phase two part one again     |
+| 24.04.2025 | 7.5          |  Final assignment  and lectures                     | I wrote the final assignment and watched all remaining lectures     |
